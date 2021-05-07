@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap');
+
+body {
+  background-image: url('Assets/bg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+  font-family: 'DM Sans', sans-serif;
+  color: white;
+}
+
+.logo{
+	height: 50px;
+	width: 50px;
+	float: left;
+	margin-left: 5px;
+	margin-right: 5px;
+	draggable: false;
+	position: fixed;
+	cursor: pointer;
+}
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  margin-left: 60px;
+  padding: 0;
+  overflow: hidden;
+  background: rgba( 255, 255, 255, 0.25 );
+  backdrop-filter: blur( 4px );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  border-radius: 50px;
+  /*position: fixed;*/
+  /*width: 100%;*/
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background: rgba( 255, 255, 255, 0.50 );}
+
+ul.topnav li a.active {background: rgba( 255, 255, 255, 0.65 );}
+
+/*ul.topnav li.right {float: right;}*/
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
+}
+
+.logo-main {
+	margin-top: 20px;
+	width: 250px;
+	height: 250px;
+}
+
+.main-text {
+	text-align: center;
+	font-size: 50px;
+}
+
+.divider {
+	background-color: white;
+	height: 5px;
+	width: 50px;
+	margin: auto;
+	border-radius: 50px;
+	margin-top: 50px;
+}
+
+.youtube {
+	text-align: center;
+	margin-top: 100px;
+}
+
+.btn {
+	color: white;
+	background-color: #003df5;
+	border-radius: 50px;
+	border: 1px solid #003df5;
+	padding: 15px;
+	font-size: 25px;
+	font-family: 'DM Sans', sans-serif;
+}
+
+.btn:hover {
+	color: #003df5;
+	background-color: white;
+	cursor: pointer;
+	/*box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );*/
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+::selection {
+  color: white;
+  background: #003df5;
+}
