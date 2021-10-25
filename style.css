@@ -44,9 +44,9 @@ ul.topnav li a {
   text-decoration: none;
 }
 
-ul.topnav li a:hover:not(.active) {background: rgba( 255, 255, 255, 0.50 );}
+ul.topnav li a:hover {background: rgba( 255, 255, 255, 0.50 );}
 
-ul.topnav li a.active {background: rgba( 255, 255, 255, 0.65 );}
+/*ul.topnav li a.active {background: rgba( 255, 255, 255, 0.65 );}*/
 
 /*ul.topnav li.right {float: right;}*/
 
@@ -73,11 +73,15 @@ ul.topnav li a.active {background: rgba( 255, 255, 255, 0.65 );}
 	margin: auto;
 	border-radius: 50px;
 	margin-top: 50px;
+	margin-bottom: 50px;
 }
 
 .youtube {
-	text-align: center;
-	margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
 }
 
 .btn {
@@ -120,4 +124,67 @@ ul.topnav li a.active {background: rgba( 255, 255, 255, 0.65 );}
 ::selection {
   color: white;
   background: #003df5;
+}
+
+.ytlogo {
+	height: 200px;
+}
+.ytbtn {
+	transition: all 0.3s ease-out;
+	font-size: 20px;
+	color: white;
+	font-family: 'DM Sans', sans-serif;
+	margin: 20px;
+	padding: 20px;
+    backdrop-filter: blur(25px) saturate(100%);
+    -webkit-backdrop-filter: blur(25px) saturate(100%);
+    background-color: rgba(0, 0, 0, 0);
+    border: 5px solid rgba(255, 255, 255, 0.125);
+}
+.ytbtn:hover {
+	transform: translateY(-0.25em);
+}
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+.tbtn {
+	transition: all 0.3s ease-out;
+	font-size: 20px;
+	color: white;
+	font-family: 'DM Sans', sans-serif;
+	margin: 20px;
+	padding: 20px;
+    backdrop-filter: blur(25px) saturate(100%);
+    -webkit-backdrop-filter: blur(25px) saturate(100%);
+    background-color: rgba(0, 0, 0, 0);
+    border: 5px solid rgba(255, 255, 255, 0.125);
+}
+.tbtn:hover {
+	transform: translateY(-0.25em);
+	cursor: pointer;
+}
+
+.teamav {
+	height: 200px;
+	width: 200px;
+}
+
+.teamrole {
+    padding: 18.025px;
+    background: rgba( 0, 0, 0, 0 );
+    box-shadow: 0px 0px 20px 0px rgb(0 0 0 / 37%);
+    backdrop-filter: blur( 11px );
+    -webkit-backdrop-filter: blur( 7px );
+}
+
+.teamt {
+	text-shadow: 0px 0px 20px;
+}
+
+.space {
+	height: 100px;
 }

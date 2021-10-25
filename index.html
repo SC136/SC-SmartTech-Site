@@ -1,39 +1,53 @@
 <!DOCTYPE html>
+
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>SC SmartTech</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <link rel="shortcut icon" href="Assets/logo.png" type="image/x-icon">
-    <link rel="manifest" href="manifest.json">
-  </head>
-  <body>
-    <script src="script.js"></script>
 
-<img class="logo" onclick="location.href='/'" src="Assets/Logo.png" draggable="false">
-<ul class="topnav">
-  <li><a class="active" href="#home">Home</a></li>
-  <li><a href="#youtube">YouTube</a></li>
-  <li><a href="#contact">Contact</a></li>
-  <li class="right"><a href="#about">About</a></li>
-</ul>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>SC SmartTech</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="shortcut icon" href="Assets/logo.png" type="image/x-icon">
+  <link rel="manifest" href="manifest.json">
+</head>
 
-<center><img class="logo-main" draggable="false" src="Assets/Logo.png"></center>
-<h1 class="main-text"><i><b>SC SmartTech</b></i></h1>
+<body>
+  <img class="logo" onclick="location.href='/'" src="Assets/Logo.png" draggable="false">
+  <ul class="topnav">
+    <li><a href="/">Home</a></li>
+    <li><a href="#youtube">YouTube</a></li>
+    <li><a href="team">Team</a></li>
+    <li><a href="#discord">Discord</a></li>
+  </ul>
 
-<div class="divider"></div>
+  <center><img class="logo-main" draggable="false" src="Assets/Logo.png"></center>
+  <h1 class="main-text"><b>SC SmartTech</b></h1>
 
-<div class="youtube" id="youtube">
-	<h3>SC SmartTech YoutTube</h3>
-	<button class="btn" onclick="location.href='https://youtube.com/scsmarttech'">Subscribe!!!</button>
+  <div class="divider"></div>
+
+  <div class="youtube" id="youtube">
+    <h3>A Place For Everyone Who Likes Tech</h3>
+    <!-- <button class="btn" onclick="location.href='https://youtube.com/scsmarttech'">Subscribe!!!</button> -->
+  </div>
+
+  <div class="divider"></div>
+<div class="youtube">
+  <h2>Our YouTube Channel</h2>
+  <img src="https://cdn.discordapp.com/attachments/779005181760765985/902151559427805184/yt_icon_rgb.png" alt="ytlogo" class="ytlogo">
+  <button class="ytbtn" onclick="location.href='https://youtube.com/scsmarttech'">Subscribe</button>
 </div>
+<div class="divider"></div>
+<div id="discord" class="center">
+  <h2>Our Discord Server</h2>
+  <img src="https://discordapp.com/api/guilds/594513706055106560/widget.png?style=banner4">
+  <btn class="tbtn">Join</btn>
+</div>
+  <script>
+    If('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/service-worker.js');
+    }
+  </script>
+<!-- <script src="script.js"></script> -->
+</body>
 
-<script>
-  If ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/service-worker.js');
-  }
-</script>
-
-  </body>
 </html>
